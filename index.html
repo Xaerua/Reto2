@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Formulario de Caracterización</h1>
+            <p id="description" class="description text-center">
+                Gracias por tomarte el tiempo de llenar el formulario
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Escriba su Nombre"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="apellido-label" for="apellido">Apellidos</label>
+                <input type="text" name="apellido" id="name" class="form-control" placeholder="Escriba sus Apellidos"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control"
+                    placeholder="Escriba su direccion de email" required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Edad" />
+            </div>
+            <div class="form-group">
+                <p>Por favor escoja su rol</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Seleccione su rol</option>
+                    <option value="student">Estudiante</option>
+                    <option value="job">Unicamente Trabajador</option>
+                    <option value="learner">Aprendiz</option>
+                    <option value="preferNo">Prefiero no revelarlo</option>
+                    <option value="other">Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Sexo</p>
+                <select id="dropdown" name="sexo" class="form-control" required>
+                    <option disabled selected value>Seleccione su sexo</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Esta usted de acuerdo con el paro nacional en colombia?</p>
+                <label>
+                    <input name="user-recommend" value="completamenteA" type="radio" class="input-radio"
+                        checked />Completamente de acuerdo</label>
+                <label>
+                    <input name="user-recommend" value="pacuerdo" type="radio" class="input-radio" />Parcialmente de
+                    acuerdo</label>
+
+                <label><input name="user-recommend" value="Neutral" type="radio" class="input-radio" />Neutral</label>
+                <label><input name="user-recommend" value="pdesacuerdo" type="radio" class="input-radio" />Parcialmente
+                    en
+                    Desacuerdo</label>
+                <label><input name="user-recommend" value="CompleatamenteD" type="radio"
+                        class="input-radio" />Completamente
+                    en Desacuerdo</label>
+
+            </div>
+
+            <div class="form-group">
+                <p>
+                    Cual cree que es la mejor forma de protestar?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="Marchas P">Marchas pacificas</option>
+                    <option value="Bloqueos C">Bloqueos comerciales</option>
+                    <option value="Redes Sociales">Redes Sociales</option>
+                    <option value="Otro">Otra</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    Que aspectos cree que debe mejorar Colombia?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+
+                <label><input name="prefer" value="Salud" type="checkbox" class="input-checkbox" />Sistema de
+                    Salud</label>
+                <label>
+                    <input name="prefer" value="Educacion" type="checkbox" class="input-checkbox" />Sistema
+                    Educativo</label>
+                <label><input name="prefer" value="Seguridad" type="checkbox" class="input-checkbox" />Seguridad
+                </label>
+                <label><input name="prefer" value="Inversion S" type="checkbox" class="input-checkbox" />Inversion
+                    social</label>
+                <label><input name="prefer" value="Transparencia" type="checkbox"
+                        class="input-checkbox" />Transparencia</label>
+                <label><input name="prefer" value="Confianza" type="checkbox" class="input-checkbox" />Confianza en el
+                    Gobierno</label>
+                <label><input name="prefer" value="Sostenibilidad" type="checkbox"
+                        class="input-checkbox" />Sostenibilidad</label>
+                <label><input name="prefer" value="Conservacion del MA" type="checkbox"
+                        class="input-checkbox" />Conseracion
+                    del Medio Ambiente</label>
+                <label><input name="prefer" value="Paz" type="checkbox" class="input-checkbox" />Paz</label>
+                <label><input name="prefer" value="Tolerancia" type="checkbox"
+                        class="input-checkbox" />Tolerancia</label>
+                <label><input name="prefer" value="Empatia" type="checkbox" class="input-checkbox" />Empatia
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Cuentenos brevemente cual cre es la mejor forma de salir de la crisis actual del pais</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Introduzca su comentario..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
